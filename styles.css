@@ -7,7 +7,7 @@ body {
     padding: 0;
   }
 
-  
+
   
   /* Navbar Styles */
   .navbar {
@@ -51,51 +51,61 @@ body {
     color: #777;
   }
   
-  /* Button Styles */
+ /* styles for all the buttons */
   .btn-primary {
+    margin-top: 20px;
     background-color: #007bff;
     border: none;
-    transition: background-color 0.3s;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-bottom: 20px;
   }
   
   .btn-primary:hover {
-    background-color: #8a4368;
+    background-color:var(--clr);
+    letter-spacing: 0.02cm;
+    font-size: 15px;
+    box-shadow:  0 0 15px var(--clr);
   }
   
   .btn-clear{
-    background-color: darkgreen;
+    background-color: rgb(175, 120, 53);
     color: #fff;
   }
 
-  .btn-danger {
-    background-color: #f5a45c;
-    border: none;
-    transition: background-color 0.3s;
+  .btn-clear:hover{
+    background-color: rgb(250, 125, 70);
+
   }
-  
-  .btn-danger:hover {
-    background-color: #e64d5d;
+
+  .btn-deleting{
+    background-color: darkseagreen;
+    border-radius: 10px;
   }
-  
-  .btn-outline-success {
-    border-color: #28a745;
-    color: #28a745;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .btn-outline-success:hover {
-    background-color: #28a745;
+
+  .btn-deleting:hover {
+    background-color: #217737;
     color: #fff;
   }
   
+  .btn-editing{
+    background-color: #8ada94;
+    border-radius: 10px;
+  }
+
+  .btn-editing:hover{
+    background-color: #7bba84;
+  }
+
+
   /* Table Styles */
   .table {
     margin-top: 20px;
   }
   
   .table thead {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #b7f25f;
+    color: #473939;
   }
   
   .table tbody tr:hover {
@@ -116,7 +126,7 @@ body {
   .d-flex {
     margin-top: 20px;
   }
-  
+   
   .d-flex .btn {
     margin-left: 10px;
   }

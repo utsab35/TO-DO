@@ -45,7 +45,10 @@
                 <textarea class="form-control" id="description" rows="3" placeholder="Write here"></textarea>
             </div>
 
-              <button type="submit" id = "add" class="btn btn-primary">Add to List</button>
+              <div class="d-flex justify-content-center mt-3">
+                <button type="submit" id = "add" class="btn btn-primary" style="--clr: #007bff">Add to List</button>
+              </div>
+
               
               <div id="items" class="my-4">
                 <h2>The items in the To-Do list</h2>
@@ -53,17 +56,14 @@
                     <thead>
                       <tr>
                         <th scope="col">S.No</th>
-                        <th scope="col">Item title</th>
-                        <th scope="col">Item Description</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col">Task Title</th>
+                        <th scope="col">Task deadline</th>
+                        <th scope="col">Edit Deadline</th>
+                        <th scope="col">Delete Task</th>
                       </tr>
                     </thead>
                     <tbody id = "tablebody">
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Get some Coffee</td>
-                        <td>You need Coffee</td>
-                        <td><button class="btn btn-sm btn primary">Delete</button></td>
                       </tr>
                       
                     </tbody>

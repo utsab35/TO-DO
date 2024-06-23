@@ -37,7 +37,8 @@ function update(){
             <th scope="row">${index + 1})</th>
             <td>${content[0]}</td>
             <td>${content[1]}</td>
-            <td><button class="btn btn-sm btn primary" onclick="deleted(${index})" style="background-color:red;">Delete</button></td>
+            <td><button class="btn btn-sm btn-editing" onclick="edited(${index})"">Edit</button></td>
+            <td><button class="btn btn-sm btn-deleting" onclick="deleted(${index})"">Delete</button></td>
         </tr>
         `
     });
@@ -48,6 +49,7 @@ add = document.getElementById("add");
 add.addEventListener("click", getandupdate);
 update();
 
+
 function deleted(itemindex){
     itemJsonArrayStr = localStorage.getItem('itemsJson'); // this will be returned as a string , therefore we need to parse it 
     itemJsonArray = JSON.parse(itemJsonArrayStr);
@@ -56,6 +58,20 @@ function deleted(itemindex){
     localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray));
     update();
 }
+
+
+function edited(itemindex){
+    itemJsonArrayStr = localStorage.getItem('itemsJson'); 
+    itemJsonArray = JSON.parse(itemJsonArrayStr);
+    
+    let newdeadline= prompt("Enter the new deadline: ");
+    itemJsonArray[itemindex][1] = newdeadline;
+
+    localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray));
+
+    update();
+}
+
 
 function clearing(){
     if(confirm("Do you really want to clear?")){

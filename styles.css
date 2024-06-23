@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family : 'Poppins',sans-serif;
+    background-color: #382791;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
+  /* Navbar Styles */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  /* Container Styles */
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  /* Form Styles */
+  .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-control {
+    border: 2px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .form-text {
+    color: #777;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8a4368;
+  }
+  
+  .btn-clear{
+    background-color: darkgreen;
+    color: #fff;
+  }
+
+  .btn-danger {
+    background-color: #f5a45c;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-danger:hover {
+    background-color: #e64d5d;
+  }
+  
+  .btn-outline-success {
+    border-color: #28a745;
+    color: #28a745;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  /* Table Styles */
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Custom Header Styles */
+  .text-center {
+    margin-bottom: 20px;
+  }
+  
+  .text-center h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Miscellaneous Styles */
+  .d-flex {
+    margin-top: 20px;
+  }
+  
+  .d-flex .btn {
+    margin-left: 10px;
+  }
